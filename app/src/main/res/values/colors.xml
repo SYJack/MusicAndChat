@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- View分隔线颜色-->
+    <color name="div_white">#E5E5E5</color>
+    <!-- Tab文字颜色-->
+    <color name="text_topbar">#694E42</color>
+    <color name="text_select">#1E90FF</color>
+    <!-- 主背景颜色-->
+    <color name="windows_bg">#fafafa</color>
+</resources>
