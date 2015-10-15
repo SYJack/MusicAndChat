@@ -12,6 +12,7 @@
         android:drawableTop="@drawable/tab_icon_music"
         android:gravity="center"
         android:text="音乐"
-        android:textColor="@drawable/tab_menu_text" />
+        android:textColor="@drawable/tab_menu_text"
+        android:textSize="12sp" />
 
 </RelativeLayout>
