@@ -5,9 +5,11 @@
     <color name="colorAccent">#FF4081</color>
     <!-- View分隔线颜色-->
     <color name="div_white">#E5E5E5</color>
-    <!-- Tab文字颜色-->
+    <!-- 文字颜色-->
     <color name="text_topbar">#694E42</color>
     <color name="text_select">#1E90FF</color>
     <!-- 主背景颜色-->
     <color name="windows_bg">#fafafa</color>
+    <!-- 底部Dialog背景颜色-->
+    <color name="dialog_layout_bg">#f6f6f6</color>
 </resources>

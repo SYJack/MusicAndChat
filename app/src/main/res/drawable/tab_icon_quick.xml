@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@mipmap/ic_launcher" />
+    <item android:drawable="@mipmap/tab_menu_quick_cancel" android:state_pressed="true" />
+    <item android:drawable="@mipmap/tab_menu_quick" android:state_focused="false" android:state_pressed="false" />
 </selector>

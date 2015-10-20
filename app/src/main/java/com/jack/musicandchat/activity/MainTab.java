@@ -5,6 +5,7 @@ import com.jack.musicandchat.fragment.ChatFragment;
 import com.jack.musicandchat.fragment.MusicFragment;
 
 /**
+ * enum：枚举
  * author:S.jack
  * data:2015-10-12 12:25
  */

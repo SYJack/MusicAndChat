@@ -12,9 +12,10 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabContentFactory;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.jack.musicandchat.ActivityManager;
 import com.jack.musicandchat.R;
+import com.jack.musicandchat.fragment.QuickOptionDialogFragment;
 import com.jack.musicandchat.widget.MyFragmentTabHost;
 
 import butterknife.ButterKnife;
@@ -27,6 +28,7 @@ import butterknife.InjectView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,
         View.OnTouchListener, TabHost.OnTabChangeListener {
 
+    public static final String TAG = "MainActivity.class";
     @InjectView(android.R.id.tabhost)
     MyFragmentTabHost mTabHost;
     @InjectView(R.id.iv_quick_option)
@@ -37,17 +39,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("MainActivity", "OnCreate");
+        Log.d(TAG, "OnCreate");
         ButterKnife.inject(this);
         initView();
+        ActivityManager.getActivityManager().addActivity(this);
+
     }
 
     private void initView() {
 
+        //设置FragmentTabHost
         mTabHost.setup(MainActivity.this, getSupportFragmentManager(), R.id.realtabcontent);
+        //判断sdk版本，当sdk大于10，其实是没有必要的
         if (android.os.Build.VERSION.SDK_INT > 10) {
             mTabHost.getTabWidget().setShowDividers(0);
         }
+        //初始化FragmentTabHost
         initTabs();
 
         // 中间按键图片触发
@@ -60,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initTabs() {
         MainTab[] tabs = MainTab.values();
         final int size = tabs.length;
-        Log.d("MainActivity", "Tab的个数为" + size);
+        Log.d(TAG, "Tab的个数为" + size);
         for (int i = 0; i < size; i++) {
             MainTab mainTab = tabs[i];
             TabSpec tab = mTabHost.newTabSpec(getString(mainTab.getResName()));
@@ -90,7 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.iv_quick_option) {
-            Toast.makeText(MainActivity.this, "嘿嘿", Toast.LENGTH_SHORT).show();
+            QuickOptionDialogFragment quickQuickOptionDialogFragment = new QuickOptionDialogFragment();
+            quickQuickOptionDialogFragment.show(getSupportFragmentManager(), "QuickOptionDialogFragment");
         }
 
     }

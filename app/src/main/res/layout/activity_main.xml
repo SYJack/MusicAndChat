@@ -43,5 +43,5 @@
             android:layout_gravity="center"
             android:contentDescription="@null"
             android:src="@drawable/tab_icon_quick" />
-    </FrameLayout>s
+    </FrameLayout>
 </LinearLayout>
