@@ -13,12 +13,12 @@ import com.jack.musicandchat.base.BaseFragment;
  * author:S.jack
  * data:2015-10-12 14:20
  */
-public class ChatFragment extends BaseFragment {
+public class PhotoFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        View view = inflater.inflate(R.layout.fragment_chat, null);
+        View view = inflater.inflate(R.layout.fragment_photo, null);
         return view;
     }
 }

@@ -1,13 +1,13 @@
 <resources>
 
-    <string name="app_name">MusicAndChat</string>
+    <string name="app_name">小黄鸭</string>
     <!-- 底部FragmentTabHost的文字标签指示-->
     <string name="main_tab_name_music">音乐</string>
     <string name="main_tab_name_quick">快速</string>
-    <string name="main_tab_name_chat">聊天</string>
+    <string name="main_tab_name_photo">图片</string>
     <!-- 底部快速Dialog内容文字标签指示-->
     <string name="quick_dialog_option_zhihujingxuan">知乎精选</string>
     <string name="quick_dialog_option_douban_movie">豆瓣电影</string>
     <string name="quick_dialog_option_location">定位</string>
-    <string name="quick_dialog_option_edit">便签</string>
+    <string name="quick_dialog_option_android">Android</string>
 </resources>

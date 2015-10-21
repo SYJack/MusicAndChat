@@ -31,16 +31,16 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tv_quick_content_edit"
+                android:id="@+id/tv_quick_content_android"
                 style="@style/quick_option_item">
 
                 <ImageView
                     style="@style/quick_option_img"
-                    android:src="@mipmap/dialog_quick_option_edit" />
+                    android:src="@mipmap/dialog_quick_option_android" />
 
                 <TextView
                     style="@style/quick_option_text"
-                    android:text="@string/quick_dialog_option_edit" />
+                    android:text="@string/quick_dialog_option_android" />
             </LinearLayout>
         </LinearLayout>
 

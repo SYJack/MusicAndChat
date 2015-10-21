@@ -1,7 +1,7 @@
 package com.jack.musicandchat.activity;
 
 import com.jack.musicandchat.R;
-import com.jack.musicandchat.fragment.ChatFragment;
+import com.jack.musicandchat.fragment.PhotoFragment;
 import com.jack.musicandchat.fragment.MusicFragment;
 
 /**
@@ -14,7 +14,7 @@ public enum MainTab {
 
     QUICK(1, R.string.main_tab_name_quick, R.drawable.tab_icon_quick, null),
 
-    CHAT(2, R.string.main_tab_name_chat, R.drawable.tab_icon_chat, ChatFragment.class);
+    PHOTO(2, R.string.main_tab_name_photo, R.drawable.tab_icon_photo, PhotoFragment.class);
 
     private int idx;
     private int resName;
